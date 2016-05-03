@@ -1,3 +1,20 @@
-var add = function (a,b) {
+#!/usr/bin/env node
+var math= process.argv[2];
+var num1 = parseFloat(process.argv[3]);
+var num2 = parseFloat(process.argv[4]);
+var answer;
+
+exports.add = function(a,b){
 	return a + b;
-}
+};
+exports.subtract = function(a, b) {
+	return a - b;
+};
+
+exports.multiply = function(a, b) {
+	return a * b;
+};
+
+exports.divide = function(a, b) {
+	return a / b;
+};
